@@ -1,0 +1,7 @@
+#pragma once
+
+#define WINDOW_TITLE "Timeline"
+#define DEFAULT_WINDOW_WIDTH 16
+#define DEFAULT_WINDOW_HEIGHT 9
+#define DEFAULT_WINDOW_SCALE 80
+#define TARGET_FPS 60
