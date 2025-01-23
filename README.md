@@ -26,9 +26,9 @@ You can run `.\build_and_run.bat` or follow the steps below to compile and run t
     cmake ..
     cmake --build . --config Release
     ```
-2.  Run (inside the `build` directory)
+2.  Run (inside the `build\Release` directory)
     ```batch
-    .\Release\timeline.exe
+    .\timeline.exe
     ```
 
 ## External Libraries
