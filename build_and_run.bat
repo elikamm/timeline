@@ -1,8 +1,5 @@
-#!/bin/sh
-set -e
-
-mkdir -p build
+if not exist build md build
 cd build
 cmake ..
 cmake --build . --config Release
-./timeline
+.\Release\timeline.exe
