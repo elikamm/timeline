@@ -1,18 +1,16 @@
-#include <main.hpp>
+#include <state/state.hpp>
+#include <window/window.hpp>
 
 int main(int argc, char **argv)
 {
-    GameState *state = new GameState();
-    Renderer *renderer = new Renderer(state);
+    state state({});
+    window window;
 
-    while (!state->should_quit() && !renderer->should_quit())
+    while(!state.should_quit() && !window.should_quit())
     {
-        state->update();
-        renderer->render();
+        state.update();
+        window.render(&state);
     }
-
-    renderer->quit();
-    state->quit();
 
     return 0;
 }
